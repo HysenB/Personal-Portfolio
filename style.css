@@ -1,5 +1,7 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
 
 :root {
     --color-white: #fff;
@@ -13,7 +15,7 @@
     --transition: all 300ms ease;
 }
 
-/* * {
+ * {
     margin: 0;
     padding: 0;
     outline: 0;
@@ -21,7 +23,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-} */
+} 
 
 
 body, html {
@@ -39,6 +41,9 @@ body, html {
     height: 100%;
     display: flex;
     flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Inspiration', cursive; */
+    font-family: 'Poppins', sans-serif;
   }
 
   .bgimg-1{
@@ -47,16 +52,17 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    align-items: center;
 
     justify-content: center;
-    align-items: center;
   }
 
   .caption {
      /* position: absolute; 
      left: 0;
     top: 25%;  */
-
+    /* position: absolute;
+    top: 15%; */
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -122,47 +128,3 @@ body, html {
     border-bottom: 1px solid #fff;
     margin-top: 2rem;
   }
-
- /* .projects {
-     display: flex;
-     margin-top: 5%;
- }
-
-.projects img {
-    width: 20%;
-}
-
- */
-
- .slider-container {
-    position: absolute;
-    /* top: 50%; */
-    left: 50%;
-    bottom: 0%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 25%;
-    overflow: hidden;
-    cursor: grab;
-}
-.slider {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 200%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr); /*we have 10 imgs so repeat 10 times 1 fr*/
-    /* column-gap: 2rem; */
-    pointer-events: none;
-}
-.slider-item {
-    /* width: 100%; */
-    height: 100%;
-}
-.slider-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    user-select: none;
-}
