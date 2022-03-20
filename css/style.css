@@ -6,12 +6,8 @@
 
 :root {
     --color-white: #fff;
-    --color-light: #f4f4f4;
-    --color-dark: #525252;
     --color-black: #171717;
-    --color-primary: #1ca757;
-    --color-primary-light: #20c063;
-    --color-primary-dark: #168343;
+    --color-primary: #18a757;
 
     --transition: all 300ms ease;
 }
@@ -28,6 +24,10 @@
     font-size: 16px;
 } 
 
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
 
 body, html {
   height: 100%;
@@ -35,25 +35,21 @@ body, html {
 }
 
 
-*, *::after, *::before {
-  box-sizing: border-box;
-}
-
-
   /* ============================= BUTTONs ============================= */
 .button, .button-bottom {
   background-color: rgba(0, 0, 0, 0);
-  width: 220px;
+  width: 250px;
   height: 60px;
   padding: 10px 20px;
-  border: 0.5px solid #fff;
+  border: 2px solid #fff;
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #ffffff;
+  font-weight: 600;
 }
 
 .button:hover, .button-bottom:hover {
-  background-color: #1ca757;
+  background-color: var(--color-primary);
   color: white;
 }
 .button:first-child{
@@ -87,17 +83,13 @@ body, html {
 
 
 
-  /* Content */
+/* Content */
 .contents {
-    background-color: rgba(1, 1, 1, 0.5);
+    /* background: rgba(1, 1, 1, 0.5);  */
+    background-color: var(--color-black);
     height: 100%;
-    width: auto;
     display: flex;
-    flex-direction: column;
     font-family: 'Poppins', sans-serif;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     align-items: center;
     justify-content: center;
     position: absolute;
@@ -106,15 +98,15 @@ body, html {
     left: 0;
   }
 
-  #particles-js{
-    width: 100%;
-    height: 100%;
-    background-color: var(--color-black);
-    background-image: url('');
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-  }
+/* #particles-js{
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-black);
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+} */
 
 /* Header */
 #header {
@@ -137,26 +129,25 @@ body, html {
   align-items: center;
   justify-content: center;
 }
-
-.arrow-vertical {
-  height: 80px;
-  border-left: 0.5px #fff solid;
-}
 .arrow-horizontal-top {
-  width: 800px;
-  border-bottom: 1px solid #fff;
+  width: 1000px;
+  border-bottom: 2px solid #fff;
   margin-bottom: 2rem;
 }
-
 .arrow-horizontal-bottom {
   width: 500px;
-  border-bottom: 1px solid #fff;
+  border-bottom: 2px solid #fff;
   margin-top: 2rem;
 }
+.arrow-vertical {
+  height: 80px;
+  border-left: 2px #fff solid;
+}
+
 
 /* =========== Container ============ */
 .container {
-  margin: 50px 0;
+  /* margin: 50px 0; */
   width: 1000px;
 }
 .container small{
@@ -164,7 +155,7 @@ body, html {
   /* width: 200px;
   display: block; */
   font-family: 'Allura', cursive;
-  font-size: 2rem;
+  font-size: 1.8rem;
   display: inline-block;
   color: var(--color-primary);
 }
@@ -178,7 +169,7 @@ body, html {
   text-align: right;
 }
 .container h1{
-  font-size: 6rem;
+  font-size: 4rem;
   padding: 0;
 }
 .container p {
@@ -192,7 +183,7 @@ body, html {
   padding-left: 10px;
 }
 .container strong{
-  font-size: 7rem;
+  font-size: 5rem;
   color: var(--color-primary);
   font-weight:bolder;
 }
@@ -463,7 +454,6 @@ body, html {
   font-size: 16px;
   padding: 15px;
 }
-
 .down-button:hover, .up-button:hover {
   color: #222;
 }
@@ -471,27 +461,25 @@ body, html {
 .down-button:focus, .up-button:focus {
   outline: none;
 }
-
 .slider-container .action-buttons button {
   position: absolute;
   left: 35%;
   top: 50%;
   z-index: 100;
 }
-
 .slider-container .action-buttons .down-button {
   transform: translateX(-100%);
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
-
 .slider-container .action-buttons .up-button {
   transform: translateY(-100%);
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
-/* Close Button */
+
+/* ================ Close Button ================= */
 .close-button.modal-projects {
   font-size: 60px;
   position: absolute;
