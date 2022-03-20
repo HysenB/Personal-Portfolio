@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/style.css">
   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
 
@@ -16,103 +16,148 @@
 
 <body>
 
-
+  <!-- Particles -->
   <div id="particles-js"></div>
-  <div id="particle-js" class="contents">
-    
-    <button class="button cv">downloadCV()</button>
+
+  <!-- Content -->
+  <div class="contents">
+
+    <!-- <button class="button cv">downloadCV()</button> -->
     <header id="header">
 
-      <!-- Buttonat -->
+      <!-- Buttons -->
       <div id="buttons">
+        <!-- About Me Button -->
         <button data-modal-target="#modal" class="button">aboutMe()</button>
         <button class="button" data-modal-target="#modal-form">contactMe()</button>
       </div>
 
-      <!-- Modal -->
+      <!-- Modal 1 - aboutMe -->
       <div class="modal" id="modal">
-          <button data-close-button class="close-button">&times;</button>
-          <h1>Lorem ipsum dolor sit amet.</h1>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus cum sint nam tenetur! Sit autem eveniet impedit tenetur quae eaque.</p>
+        <!-- X - close-buton -->
+        <button data-close-button class="close-button">&times;</button>
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus cum sint nam tenetur! Sit autem eveniet
+          impedit tenetur quae eaque.</p>
       </div>
+      <!-- Overlay aboutMe-->
       <div id="overlay"></div>
 
-      <!-- Modal 2 -->
+      <!-- Modal 2 - contactMe -->
       <div class="modal modal-form" id="modal-form">
+        <!-- X - close-buton -->
         <button data-close-button class="close-button">&times;</button>
+        <!-- Form -->
         <form id="form" class="form" autocomplete="off">
+
           <h1>CONTACT ME</h1>
-          
+
+          <!-- Name -->
           <div class="form-control">
             <label for="name">NAME</label>
             <input type="text" id="name" placeholder="Enter name" />
             <small>Error message</small>
           </div>
+
+          <!-- Email -->
           <div class="form-control">
             <label for="email">EMAIL</label>
             <input type="text" id="email" placeholder="Enter email" />
             <small>Error message</small>
           </div>
-          
+
+          <!-- Message -->
           <div class="form-control">
             <label for="message">MESSAGE</label>
-            <textarea style="resize: none;" name="" id="message" cols="30" rows="7" placeholder="Enter your message..."></textarea>
+            <textarea style="resize: none;" name="" id="message" cols="30" rows="7"
+              placeholder="Enter your message..."></textarea>
             <small>Error message</small>
           </div>
+
+          <!-- Submit Button -->
           <button type="submit" class="button-form">Submit</button>
         </form>
       </div>
+      <!-- Overlay - contactMe -->
       <div id="overlay"></div>
 
-      <!-- Modal 3 -->
+      <!-- Modal 3 - projects -->
       <div class="modal modal-projects" id="modal-projects">
-        
+
+        <!-- Slider -->
         <div class="slider-container">
-          
-            <button data-close-button class="close-button modal-projects">&times;</button>
+          <!-- X - close-buton -->
+          <button data-close-button class="close-button modal-projects">&times;</button>
+
+          <!-- LEFT-side slider -->
           <div class="left-slide">
-            
+
+            <!-- First slide LEFT ====== style.css -->
             <div style="background-color: #252E33">
               <h1>Nature flower</h1>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, nemo. Minima voluptatem culpa quisquam, aperiam rerum explicabo cum. Nulla perferendis mollitia maxime eius magnam accusantium odio quidem eos assumenda voluptatibus, vero inventore dolores tenetur consectetur aperiam in voluptatum! Doloremque, quod.</p>
+              <p>Lorem ipsum dolor sit amet.</p>
             </div>
+
+            <!-- Second slide LEFT ====== style.css -->
             <div style="background-color: #252E33">
               <h1>Bluuue Sky</h1>
               <p>with it's mountains</p>
             </div>
+
+            <!-- Third slide LEFT ====== style.css -->
             <div style="background-color: #252E33">
               <h1>Lonely castle</h1>
               <p>in the wilderness</p>
             </div>
+
+            <!-- Fourth slide LEFT ====== style.css -->
             <div style="background-color: #252E33">
               <h1>Flying eagle</h1>
               <p>in the sunset</p>
             </div>
           </div>
+
+          <!-- RIGHT-side slider -->
           <div class="right-slide">
 
-          
-            <div style="background-image: url('https://images.unsplash.com/photo-1519981593452-666cf05569a9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=90ed8055f06493290dad8da9584a13f7&auto=format&fit=crop&w=715&q=80')"></div>
+            <!-- First slide RIGHT ====== style.css -->
+            <div
+              style="background-image: url('https://images.unsplash.com/photo-1519981593452-666cf05569a9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=90ed8055f06493290dad8da9584a13f7&auto=format&fit=crop&w=715&q=80')">
+            </div>
 
-            <div style="background-image: url('https://images.unsplash.com/photo-1519981593452-666cf05569a9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=90ed8055f06493290dad8da9584a13f7&auto=format&fit=crop&w=715&q=80')"></div>
+            <!-- Second slide RIGHT ====== style.css -->
+            <div
+              style="background-image: url('https://images.unsplash.com/photo-1519981593452-666cf05569a9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=90ed8055f06493290dad8da9584a13f7&auto=format&fit=crop&w=715&q=80')">
+            </div>
 
-            <div style="background-image: url('https://images.unsplash.com/photo-1519981593452-666cf05569a9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=90ed8055f06493290dad8da9584a13f7&auto=format&fit=crop&w=715&q=80')"></div>
+            <!-- Third slide RIGHT ====== style.css -->
+            <div
+              style="background-image: url('https://images.unsplash.com/photo-1519981593452-666cf05569a9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=90ed8055f06493290dad8da9584a13f7&auto=format&fit=crop&w=715&q=80')">
+            </div>
 
-            <div style="background-image: url('https://images.unsplash.com/photo-1519981593452-666cf05569a9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=90ed8055f06493290dad8da9584a13f7&auto=format&fit=crop&w=715&q=80')"></div>
+            <!-- Fourth slide RIGHT ====== style.css -->
+            <div
+              style="background-image: url('https://images.unsplash.com/photo-1519981593452-666cf05569a9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=90ed8055f06493290dad8da9584a13f7&auto=format&fit=crop&w=715&q=80')">
+            </div>
           </div>
+
+          <!-- Buttons PROJECT section -->
           <div class="action-buttons">
+            <!-- Button PROJECT down -->
             <button class="down-button">
               <i class="fas fa-arrow-down" style="color: black;"></i>
             </button>
+
+            <!-- Button PROJECT up -->
             <button class="up-button">
               <i class="fas fa-arrow-up" style="color: black;"></i>
             </button>
           </div>
-          
-          
+
         </div>
       </div>
 
+      <!-- ================ IMPORTANT SECTION ================== -->
       <!-- Arrows Up -->
       <div class="arrow">
         <div class="arrow-vertical"></div>
@@ -121,12 +166,19 @@
 
       <!-- Content -->
       <div class="container">
+
+        <!-- Title section -->
+        <small class="smalll">&lt;h1&gt;</small>
         <h1>
-          <small style="font-size: 0.8rem;">&lt;h1&gt;</small> Hysen Berisha's Portfolio
-          <small style="font-size: 0.8rem;">&lt;/h1&gt;</small>
+          Hi, I'm <strong>Hysen</strong>,
+
         </h1>
+        <h1>Software Engineer </h1>
+        <small class="smallll">&lt;/h1&gt;</small>
+
+        <!-- Paragraph section -->
         <p>
-          <small style="font-size: 0.8rem; padding-right: 10px;">
+          <small class="small-p">
             &lt;p&gt;
           </small>
           Lorem ipsum dolor sit amet
@@ -134,10 +186,11 @@
           Molestiae iste natus, consequuntur aut recusandae ducimus eaque dolore quos temporibus debitis corrupti, a
           beatae, fugit tenetur corporis. Dolore illum consectetur, nostrum tenetur iste, doloribus iure ab veritatis
           necessitatibus tempora sunt mollitia.
-          <small style="font-size: 0.8rem; padding-right: 10px;">
+          <small class="small-p2">
             &lt;/p&gt;
           </small>
         </p>
+
       </div>
 
       <!-- Arrows Down -->
@@ -150,21 +203,22 @@
         <button class="button-bottom" data-modal-target="#modal-projects">projects()</button>
       </div>
 
-    
-
     </header>
   </div>
 
 
-  <script src="script.js"></script>
-  
+
+
+  <!-- ==================================== JAVASCRIPT ==================================== -->
+  <script src="./js/script.js"></script>
 
   <!-- scripts -->
-  <script src="./particles.js"></script>
-  <script src="./app.js"></script>
+  <script src="./js/particles/particles.js"></script>
+  <script src="./js/particles/app.js"></script>
 
   <!-- stats.js -->
   <script src="js/lib/stats.js"></script>
+
   <script>
     var count_particles, stats, update;
     stats = new Stats;
@@ -174,7 +228,7 @@
     stats.domElement.style.top = '0px';
     document.body.appendChild(stats.domElement);
     count_particles = document.querySelector('.js-count-particles');
-    update = function() {
+    update = function () {
       stats.begin();
       stats.end();
       if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
@@ -184,10 +238,6 @@
     };
     requestAnimationFrame(update);
   </script>
-
-
-
-
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

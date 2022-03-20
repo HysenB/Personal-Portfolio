@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 
 :root {
     --color-white: #fff;
@@ -29,74 +30,17 @@
 
 
 body, html {
-    height: 100%;
-    width: 100%;
-  }
-
-  /* ================= */
-
-
-
-
-
-
-  /* =============== */
-
-  /* Content */
-
-
-
-
-.contents {
-    background-color: rgba(1, 1, 1, 0.5);
-    height: 100%;
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    /* font-family: 'Inspiration', cursive; */
-    font-family: 'Poppins', sans-serif;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-  }
-
-  #particles-js{
-    width: 100%;
-    height: 100%;
-    background-color: var(--color-black);
-    background-image: url('');
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    /* position: absolute;
-    top: 0; */
-    z-index: 9;
-  }
-
-/* Header */
-#header {
-  /* position: absolute; 
-  left: 0;
-  top: 25%;  */
-  /* position: absolute;
-  top: 15%; */
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  height: 100%;
+  width: 100%;
 }
 
-#buttons {
-  display: flex;
-  justify-content: center;
+
+*, *::after, *::before {
+  box-sizing: border-box;
 }
 
-/* Buttons */
+
+  /* ============================= BUTTONs ============================= */
 .button, .button-bottom {
   background-color: rgba(0, 0, 0, 0);
   width: 220px;
@@ -121,7 +65,7 @@ body, html {
 
 
 /* Button - Download CV */
-.button.cv {
+/* .button.cv {
   position: absolute;
   right: 50px;
   top: 50px;
@@ -133,9 +77,60 @@ body, html {
 
 .button.cv:hover {
   background-color: #168343;
+} */
+
+
+
+
+/* ============================= */
+/* ============================= */
+
+
+
+  /* Content */
+.contents {
+    background-color: rgba(1, 1, 1, 0.5);
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+  #particles-js{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-black);
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+/* Header */
+#header {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-/* Arrows */
+#buttons {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+/* =========== Arrows =========== */
 .arrow {
   display: flex;
   flex-direction: column;
@@ -154,25 +149,58 @@ body, html {
 }
 
 .arrow-horizontal-bottom {
-  width: 800px;
+  width: 500px;
   border-bottom: 1px solid #fff;
   margin-top: 2rem;
 }
 
-/* Container */
+/* =========== Container ============ */
 .container {
   margin: 50px 0;
+  width: 1000px;
+}
+.container small{
+  text-align: right;
+  /* width: 200px;
+  display: block; */
+  font-family: 'Allura', cursive;
+  font-size: 2rem;
+  display: inline-block;
+  color: var(--color-primary);
+}
+.container .smalll {
+  display: block;
+  text-align: right;
+  width: 240px;
+}
+.container .smallll {
+  display: block;
+  text-align: right;
+}
+.container h1{
+  font-size: 6rem;
+  padding: 0;
+}
+.container p {
+  margin-top: 60px;
+  font-size: 1.2rem;
+}
+.container .small-p {
+  padding-right: 30px;
+}
+.container .small-p2 {
+  padding-left: 10px;
+}
+.container strong{
+  font-size: 7rem;
+  color: var(--color-primary);
+  font-weight:bolder;
 }
 
-.container h1 {
-  margin-bottom: 50px;
-}
 
-/*----------*/
-*, *::after, *::before {
-  box-sizing: border-box;
-}
 
+
+/* ========== MODAL ========== */
 .modal {
   position: fixed;
   top: 50%;
@@ -216,6 +244,8 @@ body, html {
   padding: 30px 40px
 }
 
+
+/* ======== OVERLAY (behind modal) */
 #overlay {
   position: fixed;
   opacity: 0;
@@ -227,16 +257,13 @@ body, html {
   background-color: rgba(0, 0, 0, 0.5);
   pointer-events: none;
 }
-
 #overlay.active {
   opacity: 1;
   pointer-events: all;
 } 
 
-/* Modal Form */
 
-
-
+/* ==================== Modal Form ==================== */
 .form {
   padding: 50px 60px;
 }
@@ -354,6 +381,7 @@ body, html {
   transform: translate(-50%, -50%) scale(1);
 } */
 
+/* ==================== Modal Project ==================== */
 .modal.modal-projects {
   position: fixed;
   top: 50%;
@@ -372,7 +400,7 @@ body, html {
   transform: translate(-50%, -50%) scale(1);
 }
 
-
+/* ==================== Slider Container ==================== */
 .slider-container {
   position: relative;
   overflow: hidden;
@@ -382,6 +410,7 @@ body, html {
   transform: translateX(-50%);
 }
 
+/* Left Side */
 .left-slide {
   height: 100%;
   width: 35%;
@@ -407,6 +436,7 @@ body, html {
   margin-top: -30px;
 }
 
+/* Right side */
 .right-slide {
   height: 100%;
   position: absolute;
@@ -424,6 +454,7 @@ body, html {
   width: 100%;
 }
 
+/* Buttons */
 .down-button, .up-button {
   background-color: #fff;
   border: none;
@@ -460,6 +491,7 @@ body, html {
   border-bottom-right-radius: 5px;
 }
 
+/* Close Button */
 .close-button.modal-projects {
   font-size: 60px;
   position: absolute;
@@ -474,4 +506,13 @@ body, html {
   position: absolute;
   top: 10px;
   right: 18px;
+}
+
+
+/* Media */
+
+@media screen and (max-width: 1060px) {
+  #primary { width:67%; }
+  #secondary { width:30%; margin-left:3%;}  
+  h1 {font-size: 2rem; color: red;}
 }
