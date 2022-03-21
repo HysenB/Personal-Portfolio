@@ -56,7 +56,7 @@ body, html {
   border-left: 1;
 }
 .button:last-child{
-  border-left: 0;
+  /* border-left: 0; */
 }
 
 
@@ -87,6 +87,7 @@ body, html {
 .contents {
     /* background: rgba(1, 1, 1, 0.5);  */
     background-color: var(--color-black);
+    background-color: rgba(1, 1, 1, 0.5);
     height: 100%;
     display: flex;
     font-family: 'Poppins', sans-serif;
@@ -98,7 +99,7 @@ body, html {
     left: 0;
   }
 
-/* #particles-js{
+#particles-js{
   width: 100%;
   height: 100%;
   background-color: var(--color-black);
@@ -106,7 +107,7 @@ body, html {
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-} */
+}
 
 /* Header */
 #header {
@@ -260,15 +261,14 @@ body, html {
 }
 
 .button-form {
-
   width: 100%;
   padding: 10px;
-  border: 0.5px solid #fff;
   cursor: pointer;
   /* font-size: 1.2rem; */
   color: #ffffff;
   background-color: var(--color-primary);
 }
+
 
 
 .form h1 {
@@ -317,15 +317,15 @@ body, html {
 }
 
 .form-control.success input {
-  border-color: var(--success-color);
+  border-color: var(--color-primary);
 }
 
 .form-control.error input {
-  border-color: var(--error-color);
+  /* border: 2px solid red; */
 }
 
 .form-control small {
-  color: var(--error-color);
+  color: red;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -404,7 +404,7 @@ body, html {
 /* Left Side */
 .left-slide {
   height: 100%;
-  width: 35%;
+  width: 50%;
   position: absolute;
   top: 0;
   left: 0;
@@ -432,7 +432,7 @@ body, html {
   height: 100%;
   position: absolute;
   top: 0;
-  left: 35%;
+  left: 50%;
   width: 65%;
   transition: transform 0.5s ease-in-out;
 }
@@ -463,8 +463,8 @@ body, html {
 }
 .slider-container .action-buttons button {
   position: absolute;
-  left: 35%;
-  top: 50%;
+  left: 50%;
+  top: 80%;
   z-index: 100;
 }
 .slider-container .action-buttons .down-button {
