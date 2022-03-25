@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./css/style.css">
   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <title>Hysen Berisha Portfolio</title>
 </head>
@@ -22,23 +23,30 @@
   <!-- Content -->
   <div class="contents">
 
-    <!-- <button class="button cv">downloadCV()</button> -->
+    <div class="tasks" data-modal-target="#modal-tasks">
+      <i class="fa-solid fa-list-check" id="tasks"></i>
+    </div>
     <header id="header">
+
 
       <!-- Buttons -->
       <div id="buttons">
         <!-- About Me Button -->
         <!-- <button data-modal-target="#modal" class="button">aboutMe()</button> -->
-        <button class="button" data-modal-target="#modal-projects">projects()</button>
+        <button class="button" data-modal-target="#modal-projects">myProjects()</button>
       </div>
 
       <!-- Modal 1 - aboutMe -->
-      <div class="modal" id="modal">
+      <div class="modal modal-tasks" id="modal-tasks">
         <!-- X - close-buton -->
         <button data-close-button class="close-button">&times;</button>
-        <h1>Lorem ipsum dolor sit amet.</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus cum sint nam tenetur! Sit autem eveniet
-          impedit tenetur quae eaque.</p>
+        <h1>TASKS</h1>
+        <ul>
+          <li>*  make the page responsive</li>
+          <li>* modify project section</li>
+          <li>* add more projects</li>
+          <li>* add albanian language</li>
+        </ul>
       </div>
       <!-- Overlay aboutMe-->
       <div id="overlay"></div>
@@ -48,29 +56,30 @@
         <!-- X - close-buton -->
         <button data-close-button class="close-button">&times;</button>
         <!-- Form -->
-        <form id="form" class="form" autocomplete="off">
+        <form id="form" class="form" autocomplete="off" action="https://formsubmit.co/hysi2000@live.com"  method="POST">
 
           <h1>CONTACT ME</h1>
 
           <!-- Name -->
           <div class="form-control">
+            <input type="hidden" name="_captcha" value="false">
             <label for="name">NAME</label>
-            <input type="text" id="name" placeholder="Enter name" />
+            <input name="name" type="text" id="name" placeholder="Enter name" required/>
             <small>Error message</small>
           </div>
 
           <!-- Email -->
           <div class="form-control">
             <label for="email">EMAIL</label>
-            <input type="text" id="email" placeholder="Enter email" />
+            <input name="email" type="text" id="email" placeholder="Enter email" required/>
             <small>Error message</small>
           </div>
 
           <!-- Message -->
           <div class="form-control">
             <label for="message">MESSAGE</label>
-            <textarea style="resize: none;" name="" id="message" cols="30" rows="7"
-              placeholder="Enter your message..."></textarea>
+            <textarea name="message" style="resize: none;" name="" id="message" cols="30" rows="7"
+              placeholder="Enter your message..." required></textarea>
             <small>Error message</small>
           </div>
 
@@ -95,26 +104,59 @@
             <!-- First slide LEFT ====== style.css -->
             <div style="background-color: #171717">
               <h1>Online Text Summarization</h1>
-              <p>Technology used: Python, Django, HTML, CSS Javascript, Bootstrap</p>
-              <p>Library: nltk, django-bootstrap, lxml, requests, beautifulsoup4 etc</p>
+              <p>Technology used: Python, Django, HTML, CSS, Bootstrap</p>
+              <!-- Left-side buttons -->
+              <div class="left-side-buttons">
+                <a href="https://github.com/BerishaHysen/textsummary" target="_blank">
+                  <button class="ls-btn">
+                    <i class="fa-brands fa-github-square" _blank></i>
+                    Github
+                  </button>
+              
+                </a>
+                <a>
+                  <button class="ls-btn">
+                    <i class="fa-brands fa-behance-square"></i>
+                    Behance
+                  </button>
+                </a>
+              
+              </div>
             </div>
 
             <!-- Second slide LEFT ====== style.css -->
-            <div style="background-color: #171717">
+            <!-- <div style="background-color: #171717">
               <h1>Bluuue Sky</h1>
               <p>with it's mountains</p>
-            </div>
+            </div> -->
 
             <!-- Third slide LEFT ====== style.css -->
-            <div style="background-color: #252E33">
+            <!-- <div style="background-color: #252E33">
               <h1>Lonely castle</h1>
               <p>in the wilderness</p>
-            </div>
+            </div> -->
 
             <!-- Fourth slide LEFT ====== style.css -->
             <div style="background-color: #171717">
-              <h1>Flying eagle</h1>
-              <p>in the sunset</p>
+              <h1>NEWS Website</h1>
+              <p>Technology used: HTML, CSS, JavaScript</p>
+              <!-- Left-side buttons -->
+              <div class="left-side-buttons">
+                <a href="https://github.com/BerishaHysen/PROJEKTIWEB" target="_blank">
+                  <button class="ls-btn">
+                    <i class="fa-brands fa-github-square" _blank></i>
+                    Github
+                  </button>
+              
+                </a>
+                <a>
+                  <button class="ls-btn">
+                    <i class="fa-brands fa-behance-square"></i>
+                    Behance
+                  </button>
+                </a>
+              
+              </div>
             </div>
           </div>
 
@@ -123,22 +165,22 @@
 
             <!-- First slide RIGHT ====== style.css -->
             <div
-              style="background-image: url('https://images.unsplash.com/photo-1519981593452-666cf05569a9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=90ed8055f06493290dad8da9584a13f7&auto=format&fit=crop&w=715&q=80')">
+              style="background-image: url('./img/news.png')">
             </div>
 
             <!-- Second slide RIGHT ====== style.css -->
-            <div
+            <!-- <div
               style="background-image: url('https://images.unsplash.com/photo-1519981593452-666cf05569a9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=90ed8055f06493290dad8da9584a13f7&auto=format&fit=crop&w=715&q=80')">
-            </div>
+            </div> -->
 
             <!-- Third slide RIGHT ====== style.css -->
-            <div
+            <!-- <div
               style="background-image: url('https://images.unsplash.com/photo-1519981593452-666cf05569a9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=90ed8055f06493290dad8da9584a13f7&auto=format&fit=crop&w=715&q=80')">
-            </div>
+            </div> -->
 
             <!-- Fourth slide RIGHT ====== style.css -->
             <div
-              style="background-image: url('https://images.unsplash.com/photo-1519981593452-666cf05569a9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=90ed8055f06493290dad8da9584a13f7&auto=format&fit=crop&w=715&q=80')">
+              style="background-image: url('./img/qqq.png')">
             </div>
           </div>
 
@@ -176,22 +218,25 @@
         </h1>
         <h1>Software Engineer </h1>
         <small class="smallll">&lt;/h1&gt;</small>
+       
+        
 
         <!-- Paragraph section -->
         <p>
           <small class="small-p">
             &lt;p&gt;
           </small>
-          Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Sequi et nesciunt beatae quae deserunt, quos ipsam accusantium consequuntur?
-          Molestiae iste natus, consequuntur aut recusandae ducimus eaque dolore quos temporibus debitis corrupti, a
-          beatae, fugit tenetur corporis. Dolore illum consectetur, nostrum tenetur iste, doloribus iure ab veritatis
-          necessitatibus tempora sunt mollitia.
+          I love to code!
           <small class="small-p2">
             &lt;/p&gt;
           </small>
         </p>
-
+        <a href="./Hysen_Berisha_CV.pdf" target="_blank"><button class="download-button">
+          <div>
+            <i class="fa-solid fa-download"></i>
+             Download CV
+          </div>
+        </button></a>
       </div>
 
       <!-- Arrows Down -->
@@ -201,10 +246,30 @@
       </div>
 
       <div id="buttons">
-        <button class="button-bottom" data-modal-target="#modal-form">contact()</button>
+        <button class="button-bottom"  data-modal-target="#modal-form">contactMe()</button>
       </div>
 
+      
+
     </header>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div>
+        <p> &copy; 2022 Hysen Bersiha
+        </p>
+      </div>
+         <!-- Link Pages -->
+         <div>
+          <a href="https://www.github.com/HysenB" target="_blank">
+            <i class="fa-brands fa-github-square" _blank></i>
+          </a>
+
+          <a href="https://www.behance.net/hysenberisha" target="_blank"><i class="fa-brands fa-behance-square"></a></i>
+          <a href="https://www.linkedin.com/in/hysenberisha/" target="_blank"><i class="fa-brands fa-linkedin"></a></i>
+         </div>
+    </div>
+    
   </div>
 
 
@@ -243,6 +308,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
+
 </body>
 
 </html>
