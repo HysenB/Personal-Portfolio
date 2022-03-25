@@ -55,9 +55,6 @@ body, html {
 .button:first-child{
   border-left: 1;
 }
-.button:last-child{
-  /* border-left: 0; */
-}
 
 
 /* Button - Download CV */
@@ -75,10 +72,6 @@ body, html {
   font-size: 2rem;
   color: var(--color-primary);
 }
-
-
-
-
 
 
 /* ============================= */
@@ -197,7 +190,6 @@ body, html {
 
 
 
-
 /* ========== MODAL ========== */
 .modal {
   position: fixed;
@@ -243,7 +235,7 @@ body, html {
 }
 
 
-/* ======== OVERLAY (behind modal) */
+/* ======== OVERLAY (behind modal) ======== */
 #overlay {
   position: fixed;
   opacity: 0;
@@ -275,8 +267,6 @@ body, html {
   background-color: var(--color-primary);
 }
 
-
-
 .form h1 {
   margin-bottom: 40px;
   font-size: 2rem;
@@ -295,7 +285,6 @@ body, html {
   padding-bottom: 20px;
   position: relative;
 }
-
 
 
 .form-control label {
@@ -327,10 +316,6 @@ body, html {
   border-color: var(--color-primary);
 }
 
-.form-control.error input {
-  /* border: 2px solid red; */
-}
-
 .form-control small {
   color: rgb(255, 66, 66);
   position: absolute;
@@ -344,42 +329,6 @@ body, html {
 .form-control.error small {
   visibility: visible;
 }
-
-
-.form button {
-  /* cursor: pointer;
-  border: 2px solid #3498db;
-  border-radius: 4px;
-  color: #fff;
-  display: block;
-  font-size: 16px;
-  padding: 10px;
-  margin-top: 20px;
-  width: 100%; */
-} 
-
-
-/*===========*/
-/* 
-.modal.modal-projects {
-  background-color: white;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  transition: 400ms ease-in-out;
-  border: 1px solid black;
-  border-radius: 20px;
-  z-index: 10;
-  background-color: var(--color-black);
-  width: 70%;
-  height: 40%; 
-  max-width: 80%;
-}
-
-.modal.modal-projects.active {
-  transform: translate(-50%, -50%) scale(1);
-} */
 
 /* ==================== Modal Project ==================== */
 .modal.modal-projects {
@@ -500,7 +449,7 @@ body, html {
   width: 100%;
 }
 
-/* Buttons */
+/* SLIDER(up-down) Buttons */
 .down-button, .up-button {
   background-color: #fff;
   border: none;
@@ -552,22 +501,6 @@ body, html {
 }
 
 
-/* Media */
-
-@media screen and (max-width: 1120px) {
-  #primary { width:67%; }
-  #secondary { width:30%; margin-left:3%;}  
-  h1 {font-size: 2rem; color: red;}
-  .container {
-    /* margin: 50px 0; */
-    width: 80%;
-    font-size: 15px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
 
 .download-button {
   border: 0;
@@ -579,7 +512,7 @@ body, html {
   cursor: pointer;
 }
 
-
+/* ==================== FOOTER ========================== */
 .footer i {
   /* position: absolute;
   right: 0; */
@@ -602,3 +535,23 @@ body, html {
   border-top: 1px solid white;
   
 }
+
+
+
+/* ================================================= */
+/* Media */
+/* ================================================= */
+
+@media screen and (max-width: 1120px) {
+  #primary { width:67%; }
+  #secondary { width:30%; margin-left:3%;} 
+  .container {
+    /* margin: 50px 0; */
+    width: 80%;
+    font-size: 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
