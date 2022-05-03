@@ -5,38 +5,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 
 :root {
-    --color-white: #fff;
-    --color-black: #171717;
-    --color-primary: #18a757;
+  --color-white: #fff;
+  --color-black: #171717;
+  --color-primary: #18a757;
 
-    --transition: all 300ms ease;
+  --transition: all 300ms ease;
 }
 
- * {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    border: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    color: var(--color-white);
-    font-size: 16px;
-} 
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: 16px;
+}
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
 
-body, html {
+body,
+html {
   height: 100%;
   width: 100%;
 }
 
 
-  /* ============================= BUTTONs ============================= */
-.button, .button-bottom {
+/* ============================= BUTTONs ============================= */
+.button,
+.button-bottom {
   background-color: rgba(0, 0, 0, 0);
   width: 220px;
   height: 50px;
@@ -48,24 +52,33 @@ body, html {
   font-weight: 600;
 }
 
-.button:hover, .button-bottom:hover {
+.button:hover,
+.button-bottom:hover {
   background-color: var(--color-primary);
   color: white;
 }
-.button:first-child{
+
+.button:first-child {
   border-left: 1;
+}
+
+.button-red {
+  background-color: #ffffff;
+  color: #006e30;
+  padding: 5px 20px;
+  display: inline;
 }
 
 
 /* Button - Download CV */
-.tasks{
+.tasks {
   position: absolute;
   right: 50px;
   top: 50px;
-  padding:10px;
+  padding: 10px;
   border: none;
   cursor: pointer;
-  
+
 }
 
 #tasks {
@@ -81,21 +94,21 @@ body, html {
 
 /* Content */
 .contents {
-    /* background: rgba(1, 1, 1, 0.5);  */
-    background-color: var(--color-black);
-    background-color: rgba(1, 1, 1, 0.5);
-    height: 100%;
-    display: flex;
-    font-family: 'Poppins', sans-serif;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-  }
+  /* background: rgba(1, 1, 1, 0.5);  */
+  background-color: var(--color-black);
+  background-color: rgba(1, 1, 1, 0.5);
+  height: 100%;
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
 
-#particles-js{
+#particles-js {
   width: 100%;
   height: 100%;
   background-color: var(--color-black);
@@ -126,16 +139,19 @@ body, html {
   align-items: center;
   justify-content: center;
 }
+
 .arrow-horizontal-top {
   width: 70%;
   border-bottom: 2px solid #fff;
   margin-bottom: 2rem;
 }
+
 .arrow-horizontal-bottom {
   width: 40%;
   border-bottom: 2px solid #fff;
   margin-top: 2rem;
 }
+
 .arrow-vertical {
   height: 15px;
   border-left: 2px #fff solid;
@@ -147,7 +163,8 @@ body, html {
   /* margin: 50px 0; */
   width: 1000px;
 }
-.container small{
+
+.container small {
   text-align: right;
   /* width: 200px;
   display: block; */
@@ -156,6 +173,7 @@ body, html {
   display: inline-block;
   color: var(--color-primary);
 }
+
 .container .smalll {
   display: block;
   text-align: right;
@@ -163,22 +181,26 @@ body, html {
   margin: 0;
   padding: 0;
 }
+
 .container .smallll {
   display: block;
   text-align: right;
   width: 800px;
 }
-.container h1{
+
+.container h1 {
   font-size: 2.5rem;
 }
 
 .container .small-p {
   padding-right: 30px;
 }
+
 .container .small-p2 {
   padding-left: 30px;
 }
-.container strong{
+
+.container strong {
   font-size: 5rem;
   color: var(--color-primary);
   /* font-weight:bolder; */
@@ -243,10 +265,11 @@ body, html {
   background-color: rgba(0, 0, 0, 0.5);
   pointer-events: none;
 }
+
 #overlay.active {
   opacity: 1;
   pointer-events: all;
-} 
+}
 
 
 /* ==================== Modal Form ==================== */
@@ -292,7 +315,8 @@ body, html {
   letter-spacing: 2px;
 }
 
-.form-control input, .form-control textarea {
+.form-control input,
+.form-control textarea {
   color: black;
   border: 2px solid #f0f0f0;
   border-radius: 4px;
@@ -392,7 +416,7 @@ body, html {
   transition: transform 0.5s ease-in-out;
 }
 
-.left-slide > div {
+.left-slide>div {
   height: 100%;
   width: 100%;
   display: flex;
@@ -403,7 +427,7 @@ body, html {
 }
 
 .left-slide h1 {
-  font-size: 40px;
+  font-size: 30px;
   margin-bottom: 10px;
   margin-top: -30px;
 }
@@ -412,6 +436,7 @@ body, html {
 .left-slide-buttons {
   display: flex;
 }
+
 .left-side-buttons .ls-btn {
   padding: 10px 20px;
   color: white;
@@ -421,8 +446,14 @@ body, html {
   margin-top: 20px;
   font-size: 20px;
 }
+
 .left-side-buttons i {
   padding-right: 5px;
+}
+
+.left-slide p {
+  padding: 30px;
+  text-align: justify;
 }
 
 /* Right side */
@@ -435,7 +466,7 @@ body, html {
   transition: transform 0.5s ease-in-out;
 }
 
-.right-slide > div {
+.right-slide>div {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -444,7 +475,8 @@ body, html {
 }
 
 /* SLIDER(up-down) Buttons */
-.down-button, .up-button {
+.down-button,
+.up-button {
   background-color: #fff;
   border: none;
   color: #aaa;
@@ -452,24 +484,30 @@ body, html {
   font-size: 16px;
   padding: 15px;
 }
-.down-button:hover, .up-button:hover {
+
+.down-button:hover,
+.up-button:hover {
   color: #222;
 }
 
-.down-button:focus, .up-button:focus {
+.down-button:focus,
+.up-button:focus {
   outline: none;
 }
+
 .slider-container .action-buttons button {
   position: absolute;
   left: 50%;
   top: 80%;
   z-index: 100;
 }
+
 .slider-container .action-buttons .down-button {
   transform: translateX(-100%);
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
+
 .slider-container .action-buttons .up-button {
   transform: translateY(-100%);
   border-top-right-radius: 5px;
@@ -527,7 +565,7 @@ body, html {
   width: 1120px;
   bottom: 0;
   border-top: 1px solid white;
-  
+
 }
 
 
@@ -537,8 +575,15 @@ body, html {
 /* ================================================= */
 
 @media screen and (max-width: 1120px) {
-  #primary { width:67%; }
-  #secondary { width:30%; margin-left:3%;} 
+  #primary {
+    width: 67%;
+  }
+
+  #secondary {
+    width: 30%;
+    margin-left: 3%;
+  }
+
   .container {
     /* margin: 50px 0; */
     width: 80%;
@@ -548,4 +593,3 @@ body, html {
     justify-content: center;
   }
 }
-
