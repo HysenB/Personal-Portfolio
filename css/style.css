@@ -37,6 +37,10 @@ html {
   width: 100%;
 }
 
+body {
+  overflow: hidden;
+}
+
 
 /* ============================= BUTTONs ============================= */
 .button,
@@ -89,7 +93,6 @@ html {
 
 /* ============================= */
 /* ============================= */
-
 
 
 /* Content */
@@ -371,6 +374,9 @@ html {
 
 /* ==================== MODAL TASKS ==================== */
 
+.modal-tasks {
+  text-align: center;
+}
 
 .modal-tasks h1 {
   font-size: 1.8rem;
@@ -575,7 +581,7 @@ html {
 /* ================================================= */
 
 @media screen and (max-width: 1120px) {
-  #primary {
+  /* #primary {
     width: 67%;
   }
 
@@ -585,11 +591,10 @@ html {
   }
 
   .container {
-    /* margin: 50px 0; */
     width: 80%;
     font-size: 15px;
     text-align: center;
     align-items: center;
     justify-content: center;
-  }
+  } */
 }

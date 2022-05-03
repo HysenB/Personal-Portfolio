@@ -21,13 +21,220 @@
 
   <!-- Content -->
   <div class="contents">
+    
+    <!-- ======================================= 1 =================================================== -->
+    <!-- Modal 1 - TASKS -->
+    <div class="modal modal-tasks" id="modal-tasks">
+      <!-- X - close-buton -->
+      <button data-close-button class="close-button">&times;</button>
+      <h1>TASKS</h1>
+      <ul>
+        <li>* make the page responsive</li>
+        <li>* modify project section</li>
+        <li>* add more projects</li>
+        <li>* add albanian language</li>
+      </ul>
+    </div>
+    <!-- Overlay TASKS-->
+    <div id="overlay"></div>
+
+    <!-- ========================================= 2 ================================================= -->
+    <!-- Modal 2 - contactMe -->
+    <div class="modal modal-form" id="modal-form">
+      <!-- X - close-buton -->
+      <button data-close-button class="close-button">&times;</button>
+      <!-- Form -->
+      <form id="form" class="form" autocomplete="off" action="https://formsubmit.co/hysi2000@live.com" method="POST">
+
+        <h1>CONTACT ME</h1>
+
+        <!-- Name -->
+        <div class="form-control">
+          <input type="hidden" name="_captcha" value="false">
+          <label for="name">NAME</label>
+          <input name="name" type="text" id="name" placeholder="Enter name" required />
+          <small>Error message</small>
+        </div>
+
+        <!-- Email -->
+        <div class="form-control">
+          <label for="email">EMAIL</label>
+          <input name="email" type="text" id="email" placeholder="Enter email" required />
+          <small>Error message</small>
+        </div>
+
+        <!-- Message -->
+        <div class="form-control">
+          <label for="message">MESSAGE</label>
+          <textarea name="message" style="resize: none;" name="" id="message" cols="30" rows="7"
+            placeholder="Enter your message..." required></textarea>
+          <small>Error message</small>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="button-form">Submit</button>
+      </form>
+    </div>
+    <!-- Overlay - contactMe -->
+    <div id="overlay"></div>
+
+
+    <!-- ============================================ 3 ============================================== -->
+    <!-- Modal 3 - projects -->
+    <div class="modal modal-projects" id="modal-projects">
+
+      <!-- Slider -->
+      <div class="slider-container">
+        <!-- X - close-buton -->
+        <button data-close-button class="close-button modal-projects">&times;</button>
+
+        <!-- LEFT-side slider -->
+        <div class="left-slide">
+
+          <!-- First slide LEFT ====== style.css -->
+          <div style="background-color: #171717">
+            <h1>CoronaVirus Tracker</h1>
+            <a class="button-red">HTML | CSS | Spring Boot | Thymeleaf</a>
+            <p>Spring Boot Java Web app to track coronavirus confirmed cases across the globe. So, it reports the
+              total number of cases reported around the globe and also it shows the total number of cases that are
+              being reported so far from the beginning by a breakdown table based on the country and state. Also, how
+              many cases have been reported today.</p>
+            <!-- Left-side buttons -->
+            <div class="left-side-buttons">
+              <a href="https://github.com/HysenB/coronavirus-tracker" target="_blank">
+                <button class="ls-btn">
+                  <i class="fa-brands fa-github-square" _blank></i>
+                  Github
+                </button>
+
+              </a>
+              <a>
+                <button type="button" class="ls-btn behance">
+                  <i class="fa-brands fa-behance-square"></i>
+                  Behance
+                </button>
+              </a>
+
+            </div>
+          </div>
+
+          <!-- Second slide LEFT ====== style.css -->
+          <div style="background-color: #171717">
+            <h1>Online Text Summarization</h1>
+            <a class="button-red">HTML | CSS | Python | Django | MySQL</a>
+            <p><strong>Text Summarizer</strong> is an online tool that wraps up a text to a specified short length. It
+              condenses a long article to main points. This app is capable of summarizing texts from URLs, plain-text,
+              or PDF-file by using Scoring or Frequency Algorithms. </p>
+            <!-- Left-side buttons -->
+            <div class="left-side-buttons">
+              <a href="https://github.com/BerishaHysen/textsummary" target="_blank">
+                <button class="ls-btn">
+                  <i class="fa-brands fa-github-square" _blank></i>
+                  Github
+                </button>
+
+              </a>
+              <a>
+                <button class="ls-btn">
+                  <i class="fa-brands fa-behance-square"></i>
+                  Behance
+                </button>
+              </a>
+
+            </div>
+          </div>
+
+          <!-- Third slide LEFT ====== style.css -->
+          <div style="background-color: #171717">
+            <h1>NEWS Website</h1>
+            <a class="button-red">HTML | CSS | JavaScript</a>
+            <p>News Website are sites devoted to delivering the news in a different format than television, print or
+              radio. News sites include sites that have a large variety of information divided into categories. This
+              app contains three categories (which are most interesting): Politics, Tech and Sports. Also, app perfoms
+              user login/signup validation, has a contact us section (with validation).</p>
+            <!-- Left-side buttons -->
+            <div class="left-side-buttons">
+              <a href="https://github.com/BerishaHysen/PROJEKTIWEB" target="_blank">
+                <button class="ls-btn">
+                  <i class="fa-brands fa-github-square" _blank></i>
+                  Github
+                </button>
+
+              </a>
+              <a>
+                <button class="ls-btn">
+                  <i class="fa-brands fa-behance-square"></i>
+                  Behance
+                </button>
+              </a>
+
+            </div>
+          </div>
+
+          <!-- Fourth slide LEFT ====== style.css -->
+          <div style="background-color: #171717">
+            <h1>E-Commerce Website</h1>
+            <a class="button-red">HTML | CSS | TypeScript/Angular | Spring Boot | MySQL</a>
+            <p>E-commerce website is a website that allows people to buy and/or sell physical goods, services, and
+              digital-products over the internet rather than at a brick-and-mortar location.</p>
+            <!-- Left-side buttons -->
+            <div class="left-side-buttons">
+              <a href="https://github.com/HysenB/ecommerce-angular-spring" target="_blank">
+                <button class="ls-btn">
+                  <i class="fa-brands fa-github-square" _blank></i>
+                  Github
+                </button>
+
+              </a>
+              <a>
+                <button class="ls-btn">
+                  <i class="fa-brands fa-behance-square"></i>
+                  Behance
+                </button>
+              </a>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT-side slider -->
+        <div class="right-slide">
+          <!-- First slide RIGHT ====== style.css -->
+          <div style="background-image: url('./img/e-commerce.jpeg')">
+          </div>
+          <!-- First slide RIGHT ====== style.css -->
+          <div style="background-image: url('./img/news.jpeg')">
+          </div>
+          <!-- Second slide RIGHT ====== style.css -->
+          <div style="background-image: url('./img/summ.jpeg')">
+          </div>
+          <!-- Second slide RIGHT ====== style.css -->
+          <div style="background-image: url('./img/coronavirus.jpeg')">
+          </div>
+        </div>
+
+        <!-- Buttons PROJECT section -->
+        <div class="action-buttons">
+          <!-- Button PROJECT down -->
+          <button class="down-button">
+            <i class="fas fa-arrow-down" style="color: black;"></i>
+          </button>
+          <!-- Button PROJECT up -->
+          <button class="up-button">
+            <i class="fas fa-arrow-up" style="color: black;"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ===================================== MAIN SECTION ============================================ -->
 
     <div class="tasks" data-modal-target="#modal-tasks">
       <i class="fa-solid fa-list-check" id="tasks"></i>
     </div>
     <header id="header">
-
-
       <!-- Buttons -->
       <div id="buttons">
         <!-- About Me Button -->
@@ -35,208 +242,7 @@
         <button class="button" data-modal-target="#modal-projects">myProjects()</button>
       </div>
 
-      <!-- Modal 1 - aboutMe -->
-      <div class="modal modal-tasks" id="modal-tasks">
-        <!-- X - close-buton -->
-        <button data-close-button class="close-button">&times;</button>
-        <h1>TASKS</h1>
-        <ul>
-          <li>* make the page responsive</li>
-          <li>* modify project section</li>
-          <li>* add more projects</li>
-          <li>* add albanian language</li>
-        </ul>
-      </div>
-      <!-- Overlay aboutMe-->
-      <div id="overlay"></div>
 
-      <!-- Modal 2 - contactMe -->
-      <div class="modal modal-form" id="modal-form">
-        <!-- X - close-buton -->
-        <button data-close-button class="close-button">&times;</button>
-        <!-- Form -->
-        <form id="form" class="form" autocomplete="off" action="https://formsubmit.co/hysi2000@live.com" method="POST">
-
-          <h1>CONTACT ME</h1>
-
-          <!-- Name -->
-          <div class="form-control">
-            <input type="hidden" name="_captcha" value="false">
-            <label for="name">NAME</label>
-            <input name="name" type="text" id="name" placeholder="Enter name" required />
-            <small>Error message</small>
-          </div>
-
-          <!-- Email -->
-          <div class="form-control">
-            <label for="email">EMAIL</label>
-            <input name="email" type="text" id="email" placeholder="Enter email" required />
-            <small>Error message</small>
-          </div>
-
-          <!-- Message -->
-          <div class="form-control">
-            <label for="message">MESSAGE</label>
-            <textarea name="message" style="resize: none;" name="" id="message" cols="30" rows="7"
-              placeholder="Enter your message..." required></textarea>
-            <small>Error message</small>
-          </div>
-
-          <!-- Submit Button -->
-          <button type="submit" class="button-form">Submit</button>
-        </form>
-      </div>
-      <!-- Overlay - contactMe -->
-      <div id="overlay"></div>
-
-      <!-- Modal 3 - projects -->
-      <div class="modal modal-projects" id="modal-projects">
-
-        <!-- Slider -->
-        <div class="slider-container">
-          <!-- X - close-buton -->
-          <button data-close-button class="close-button modal-projects">&times;</button>
-
-          <!-- LEFT-side slider -->
-          <div class="left-slide">
-
-            <!-- First slide LEFT ====== style.css -->
-            <div style="background-color: #171717">
-              <h1>CoronaVirus Tracker</h1>
-              <a class="button-red">HTML | CSS | Spring Boot | Thymeleaf</a>
-              <p>Spring Boot Java Web app to track coronavirus confirmed cases across the globe. So, it reports the total number of cases reported around the globe and also it shows the total number of cases that are being reported so far from the beginning by a breakdown table based on the country and state. Also, how many cases have been reported today.</p>
-              <!-- Left-side buttons -->
-              <div class="left-side-buttons">
-                <a href="https://github.com/HysenB/coronavirus-tracker" target="_blank">
-                  <button class="ls-btn">
-                    <i class="fa-brands fa-github-square" _blank></i>
-                    Github
-                  </button>
-
-                </a>
-                <a>
-                  <button type="button" class="ls-btn" disabled>
-                    <i class="fa-brands fa-behance-square"></i>
-                    Behance
-                  </button>
-                </a>
-
-              </div>
-            </div>
-
-            <!-- Second slide LEFT ====== style.css -->
-            <div style="background-color: #171717">
-              <h1>Online Text Summarization</h1>
-              <a class="button-red">HTML | CSS | Python | Django | MySQL</a>
-              <p><strong>Text Summarizer</strong> is an online tool that wraps up a text to a specified short length. It condenses a long article to main points. This app is capable of summarizing texts from URLs, plain-text, or PDF-file by using Scoring or Frequency Algorithms. </p>
-              <!-- Left-side buttons -->
-              <div class="left-side-buttons">
-                <a href="https://github.com/BerishaHysen/textsummary" target="_blank">
-                  <button class="ls-btn">
-                    <i class="fa-brands fa-github-square" _blank></i>
-                    Github
-                  </button>
-
-                </a>
-                <a>
-                  <button class="ls-btn">
-                    <i class="fa-brands fa-behance-square"></i>
-                    Behance
-                  </button>
-                </a>
-
-              </div>
-            </div>
-
-            <!-- Third slide LEFT ====== style.css -->
-            <div style="background-color: #171717">
-              <h1>NEWS Website</h1>
-              <a class="button-red">HTML | CSS | JavaScript</a>
-              <p>News Website are sites devoted to delivering the news in a different format than television, print or radio. News sites include sites that have a large variety of information divided into categories. This app contains three categories (which are most interesting): Politics, Tech and Sports. Also, app perfoms user login/signup validation, has a contact us section (with validation).</p>
-              <!-- Left-side buttons -->
-              <div class="left-side-buttons">
-                <a href="https://github.com/BerishaHysen/PROJEKTIWEB" target="_blank">
-                  <button class="ls-btn">
-                    <i class="fa-brands fa-github-square" _blank></i>
-                    Github
-                  </button>
-
-                </a>
-                <a>
-                  <button class="ls-btn">
-                    <i class="fa-brands fa-behance-square"></i>
-                    Behance
-                  </button>
-                </a>
-
-              </div>
-            </div>
-
-            <!-- Fourth slide LEFT ====== style.css -->
-            <div style="background-color: #171717">
-              <h1>E-Commerce Website</h1>
-              <a class="button-red">HTML | CSS | TypeScript/Angular | Spring Boot | MySQL</a>
-              <p>E-commerce website is a website that allows people to buy and/or sell physical goods, services, and digital-products over the internet rather than at a brick-and-mortar location.</p>
-              <!-- Left-side buttons -->
-              <div class="left-side-buttons">
-                <a href="https://github.com/HysenB/ecommerce-angular-spring" target="_blank">
-                  <button class="ls-btn">
-                    <i class="fa-brands fa-github-square" _blank></i>
-                    Github
-                  </button>
-
-                </a>
-                <a>
-                  <button class="ls-btn">
-                    <i class="fa-brands fa-behance-square"></i>
-                    Behance
-                  </button>
-                </a>
-
-              </div>
-            </div>
-
-          </div>
-
-          <!-- RIGHT-side slider -->
-          <div class="right-slide">
-
-            <!-- First slide RIGHT ====== style.css -->
-            <div style="background-image: url('./img/e-commerce.jpeg')">
-            </div>
-
-            <!-- First slide RIGHT ====== style.css -->
-            <div style="background-image: url('./img/news.jpeg')">
-            </div>
-
-            <!-- Second slide RIGHT ====== style.css -->
-            <div style="background-image: url('./img/summ.jpeg')">
-            </div>
-
-            <!-- Second slide RIGHT ====== style.css -->
-            <div style="background-image: url('./img/coronavirus.jpeg')">
-            </div>
-
-
-          </div>
-
-          <!-- Buttons PROJECT section -->
-          <div class="action-buttons">
-            <!-- Button PROJECT down -->
-            <button class="down-button">
-              <i class="fas fa-arrow-down" style="color: black;"></i>
-            </button>
-
-            <!-- Button PROJECT up -->
-            <button class="up-button">
-              <i class="fas fa-arrow-up" style="color: black;"></i>
-            </button>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- ================ IMPORTANT SECTION ================== -->
       <!-- Arrows Up -->
       <div class="arrow">
         <div class="arrow-vertical"></div>
@@ -250,12 +256,9 @@
         <small class="smalll">&lt;h1&gt;</small>
         <h1>
           Hi, I'm <strong>Hysen</strong>,
-
         </h1>
         <h1>Software Engineer </h1>
         <small class="smallll">&lt;/h1&gt;</small>
-
-
 
         <!-- Paragraph section -->
         <p>
@@ -281,11 +284,10 @@
         <div class="arrow-vertical"></div>
       </div>
 
+      <!-- Contact Me -->
       <div id="buttons">
         <button class="button-bottom" data-modal-target="#modal-form">contactMe()</button>
       </div>
-
-
 
     </header>
 
